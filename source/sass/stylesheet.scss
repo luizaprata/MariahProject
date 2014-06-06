@@ -1,0 +1,39 @@
+// Compass
+@import
+  'compass',
+  'compass/reset';
+
+// Sprite
+$assets-sprite-dimensions: true;
+@import 'assets/*.png';
+
+
+/** RESOURCES **/
+@import
+  'resources/fonts',
+  'resources/variables',
+  'resources/functions';
+
+/** LAYOUT **/
+// Components
+@import
+  'layouts/components/alerts',
+  'layouts/components/buttons',
+  'layouts/components/colors',
+  'layouts/components/forms',
+  'layouts/components/icons',
+  'layouts/components/list',
+  'layouts/components/nav',
+  'layouts/components/tables';
+
+// Base
+@import
+  'layouts/base/layout',
+  'layouts/base/normalize';
+
+// Commom
+@import
+  'layouts/commom/header',
+  'layouts/commom/footer',
+  'layouts/commom/aside';
+

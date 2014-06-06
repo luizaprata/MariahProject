@@ -1,0 +1,12 @@
+* {
+  @include box-sizing('border-box');
+}
+
+::selection {
+  background: $verde; /* Safari */
+  color: #fff;
+}
+::-moz-selection {
+  background: $verde; /* Firefox */
+  color: #fff;
+}
