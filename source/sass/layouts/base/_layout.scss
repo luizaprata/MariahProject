@@ -1,43 +1,49 @@
 body {
-  background-color: #f6f6f9;
-  width: $width-layout;
+  background: $paleyellow;
+  color: lighten($darkblue,20);
+  @extend %font-normal;
+  @include font-size(12);
 }
 
-.content-scope{
-  float: left;
-  position: relative;
-  display: block;
-  width: 100%;
+//generate all the heading stylings// see COMPASS > selector helpers  
+#{headings()} {
+  @extend %font-bold;
+  @include font-size(20);
+  @include text-shadow(lighten($paleyellow,40) 1px 1px);
 }
 
-.content-full {
-  width: 100%;
-  float: left;
-  position: relative;
+
+h1 {
+  margin:20px 0 0 0;
+  color:$orange;
+  border-bottom: 1px solid $lightgray;
+  line-height: 100%;
 }
 
-.content-center {
-  margin: 0 auto;
-  padding: 0 52px;
-  position: relative;
+h3 {
+  line-height: 60%;
 }
 
-.content-inner {
-  width: 100%;
-  float: left;
+a {
+  text-decoration: underline;
+  color: mediumgray;
+  &:hover{ // & same thing as colon hover
+    color:$orange;
+  }
 }
 
-.left {
-  float: left;
-}
-.right {
-  float: right;
+p {
+  margin-bottom: 10px;
 }
 
-%font-bold {
-  font-family: 'OfficinaBoldSerif';
-  font-weight: normal;
+.small{
+  @include font-size(16);
+  color:$blue;
 }
-%font-normal {
-  font-family: 'OfficinaBookSerif';
+
+
+/// LAYOUT CLASS // controll sizes responsivo
+
+.layout {
+  padding: 3%;
 }

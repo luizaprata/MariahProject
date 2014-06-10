@@ -1,1 +1,0 @@
-var vivoApp = angular.module('vivoApp', ['ngRoute', 'ngResource', 'ngCookies']);

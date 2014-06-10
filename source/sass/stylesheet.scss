@@ -1,6 +1,7 @@
 // Compass
 @import
   'compass',
+  //This module applies the global reset to your stylesheet by simply importing it.
   'compass/reset';
 
 // Sprite
@@ -34,6 +35,10 @@ $assets-sprite-dimensions: true;
 // Commom
 @import
   'layouts/commom/header',
-  'layouts/commom/footer',
-  'layouts/commom/aside';
+  'layouts/commom/footer';
+
+
+/** PAGES **/
+@import
+  'pages/home';
 

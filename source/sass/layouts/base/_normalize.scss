@@ -1,12 +1,11 @@
-* {
-  @include box-sizing('border-box');
-}
 
 ::selection {
-  background: $verde; /* Safari */
+  background: $darkblue; /* Safari */
   color: #fff;
 }
 ::-moz-selection {
-  background: $verde; /* Firefox */
+  background: $darkblue; /* Firefox */
   color: #fff;
 }
+
+$default-border-radius:10px;
