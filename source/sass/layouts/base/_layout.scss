@@ -45,5 +45,20 @@ p {
 /// LAYOUT CLASS // controll sizes responsivo
 
 .layout {
+  @include clearfix; // compass
   padding: 3%;
+  
+  .primary {
+    
+    @include respond-to($medium-device) { 
+      width: percent(3,12);
+      float: right;
+      margin:auto;
+    }
+  }
+  
+}
+
+.clear {
+  clear:both;
 }
