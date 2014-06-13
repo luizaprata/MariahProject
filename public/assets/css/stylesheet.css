@@ -120,15 +120,30 @@ p {
 .layout {
   overflow: hidden;
   *zoom: 1;
-  padding: 3%; }
-  @media only screen and (max-width: 768px) {
-    /* line 51, ../../../source/sass/layouts/base/_layout.scss */
-    .layout .primary {
-      width: 25%;
-      float: right;
-      margin: auto; } }
+  padding: 3%;
+  max-width: 1024px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 480px) {
+    /* line 57, ../../../source/sass/layouts/base/_layout.scss */
+    .layout .primary #articlesPublished {
+      width: 66.66667%;
+      float: left;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      color: #eae3cb;
+      background: #259286; } }
+  @media only screen and (min-width: 480px) {
+    /* line 67, ../../../source/sass/layouts/base/_layout.scss */
+    .layout .primary .secondary {
+      width: 33.33333%;
+      float: right; } }
 
-/* line 62, ../../../source/sass/layouts/base/_layout.scss */
+/* line 76, ../../../source/sass/layouts/base/_layout.scss */
 .clear {
   clear: both; }
 
@@ -185,13 +200,18 @@ footer {
 .speakers .artist {
   overflow: hidden;
   *zoom: 1; }
-  /* line 8, ../../../source/sass/pages/_home.scss */
+  @media only screen and (min-width: 480px) {
+    /* line 5, ../../../source/sass/pages/_home.scss */
+    .speakers .artist {
+      width: 33.33333%;
+      float: left; } }
+  /* line 15, ../../../source/sass/pages/_home.scss */
   .speakers .artist h3 {
     padding-top: 10px;
     padding-bottom: 5px;
     border-bottom: 1px dotted #819090;
     margin-bottom: 5px; }
-  /* line 16, ../../../source/sass/pages/_home.scss */
+  /* line 22, ../../../source/sass/pages/_home.scss */
   .speakers .artist img {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -202,28 +222,27 @@ footer {
     margin-right: 10px;
     margin-bottom: 10px; }
 
-/* line 28, ../../../source/sass/pages/_home.scss */
+/* line 33, ../../../source/sass/pages/_home.scss */
 #nextmeeting {
   overflow: hidden;
   *zoom: 1; }
-  /* line 31, ../../../source/sass/pages/_home.scss */
+  /* line 36, ../../../source/sass/pages/_home.scss */
   #nextmeeting img {
     width: 30%;
     max-width: 130px;
-    float: left;
-    margin-right: 3%; }
+    float: left; }
 
-/* line 44, ../../../source/sass/pages/_home.scss */
+/* line 49, ../../../source/sass/pages/_home.scss */
 .sociamediaicons .title {
   float: left; }
-/* line 47, ../../../source/sass/pages/_home.scss */
+/* line 52, ../../../source/sass/pages/_home.scss */
 .sociamediaicons ul {
   float: left; }
-  /* line 49, ../../../source/sass/pages/_home.scss */
+  /* line 54, ../../../source/sass/pages/_home.scss */
   .sociamediaicons ul li {
     display: inline-block;
     margin-left: 5px; }
-    /* line 52, ../../../source/sass/pages/_home.scss */
+    /* line 57, ../../../source/sass/pages/_home.scss */
     .sociamediaicons ul li img {
       width: 30px;
       -webkit-border-radius: 10px;

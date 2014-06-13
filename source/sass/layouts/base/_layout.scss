@@ -47,16 +47,30 @@ p {
 .layout {
   @include clearfix; // compass
   padding: 3%;
+  max-width: $large-device;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   
   .primary {
     
-    @include respond-to($medium-device) { 
-      width: percent(3,12);
-      float: right;
-      margin:auto;
+    #articlesPublished {
+      @include respond-to($small-device) { 
+        width: percent(14,$grids);
+        float: left;
+        @include border-radius(10px);
+        color: $paleyellow;
+        background:$cyan;
+      }
+    }
+    
+    .secondary {
+      @include respond-to($small-device) { 
+        width: percent(7,$grids);
+        float: right;
+      }
     }
   }
-  
 }
 
 .clear {

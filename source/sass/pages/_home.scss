@@ -4,6 +4,13 @@
 .speakers{
 	.artist {
 		@include clearfix; // compass
+      
+        
+      
+        @include respond-to($small-device) { 
+          width: percent(7,$grids);
+          float: left;
+        }
 
 		h3 {
 			padding-top: 10px;
@@ -11,8 +18,7 @@
 			border-bottom: 1px dotted $lightgray;
 			margin-bottom: 5px;
 		}
-	
-
+      
 		img {
 			@include border-radius; //compass 
 			float:left;
@@ -24,7 +30,6 @@
 	}
 }
 
-
 #nextmeeting {
 	@include clearfix;
 
@@ -33,7 +38,7 @@
 		max-width: 130px;
 		float: left;
 
-		margin-right: 3%;
+		//margin-right: 3%;
 	}
 }
 
